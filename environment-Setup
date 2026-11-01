@@ -1,0 +1,14 @@
+#! /bin/bash
+### this file is taken from buildroot environment setup and using all buildroot base tools\
+### insetad of using localy installed tool chain and tools.
+export BRDIR=/media/amaan/work/EMBLOGIC/rpi/Rasberry_pi/build/linux-custom
+
+# Use Buildroot toolchain first
+export PATH=/media/amaan/work/EMBLOGIC/rpi/Rasberry_pi/host/bin:$PATH
+
+# Architecture for Pi4
+export ARCH=arm64
+
+# Buildroot toolchain prefix (adjust if needed)
+export CROSS_COMPILE=aarch64-buildroot-linux-gnu-
+
